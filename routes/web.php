@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','StaticPagesController@home');  //路由去抓一個控制器，然後控制器使用@home方法去抓'/'頁面
+Route::get('/help','StaticPagesController@help');
+Route::get('/about','StaticPagesController@about');
